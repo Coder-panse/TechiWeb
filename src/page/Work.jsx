@@ -1,12 +1,13 @@
 import React from "react";
 import { motion, useInView } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 const Work = () => {
 
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { once: true,margin:"40% 0px" });
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
@@ -30,10 +31,12 @@ const Work = () => {
           </div>
 
           <div>
-            <button className="px-8 py-2 rounded-full border bg-black font-medium text-white">
+            <Link to="/work">
+            <button className="px-8 py-2 rounded-full border bg-black font-medium text-white cursor-pointer">
               {" "}
               Explore More
             </button>
+            </Link>
           </div>
         </div>
         </motion.div>
@@ -72,9 +75,11 @@ const Work = () => {
                 </button>
               </div>
               <div>
+               <Link to='https://mavyscrubs.com/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+               </Link>
               </div>
             </div>
           </div>
@@ -84,7 +89,7 @@ const Work = () => {
           ref={ref}
           initial={{ opacity: 0, y: 20 }}
           animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.5, delay: 0.2 }}
+          transition={{ duration: 0.5, delay: 0.3 }}
           >
             <div className="flex flex-col-reverse md:flex-row mt-24 md:mt-32 mb-16 md:mx-5 justify-center gap-10 md:gap-20">
             <div className="text-center w-full md:w-[30vw]">
@@ -103,9 +108,11 @@ const Work = () => {
                 </button>
               </div>
               <div>
+                <Link to='https://goldingllc.net/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+                </Link>
               </div>
             </div>
 

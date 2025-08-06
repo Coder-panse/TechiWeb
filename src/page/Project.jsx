@@ -1,6 +1,12 @@
 import React from "react";
+import { useEffect } from "react";
 
 const Project = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className=" bg-gray-900">
       <div className="mx-[14%] pt-[200px] pb-[80px] text-white">

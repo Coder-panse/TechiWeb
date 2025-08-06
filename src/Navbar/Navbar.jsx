@@ -27,7 +27,7 @@ const Navbar = () => {
               <NavLink to="/work">Work</NavLink>
             </li>
             <li>
-              <NavLink to="/about">Services</NavLink>
+              <NavLink to="#">Services</NavLink>
             </li>
           </ul>
         </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <NavLink  to="/work" onClick={()=>setIsOpen(!isOpen)}>Work</NavLink>
           </li>
           <li className="cursor-pointer hover:text-gray-300">
-            <NavLink  to="/about" onClick={()=>setIsOpen(!isOpen)}>Service</NavLink>
+            <NavLink  to="#" onClick={()=>setIsOpen(!isOpen)}>Service</NavLink>
           </li>
   
         </ul>

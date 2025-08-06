@@ -8,7 +8,10 @@ const Service = () => {
 
   
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, {
+     once: true ,
+    margin:"40% 0px"
+    });
   const [hasAnimated, setHasAnimated] = useState(false);
 
   useEffect(() => {
