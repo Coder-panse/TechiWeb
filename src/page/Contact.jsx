@@ -53,12 +53,7 @@ const Contact = () => {
     return (
     <div className='bg-gray-900 z-0' >
       {/* Background Pattern */}
-      {/* <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-gray-800"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_75%_75%,rgba(147,51,234,0.1)_0%,transparent_50%)]"></div>
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(156,146,172,0.05)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
-      </div> */}
+      
 
       <div className="relative z-0 container mx-auto px-4 py-36">
         {/* Header Section */}

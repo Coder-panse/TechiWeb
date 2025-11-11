@@ -1,8 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 const Project = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -44,9 +44,11 @@ const Project = () => {
                 </button>
               </div>
               <div>
+               <Link to='https://mavyscrubs.com/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+               </Link>
               </div>
             </div>
           </div>
@@ -69,9 +71,11 @@ const Project = () => {
                 </button>
               </div>
               <div>
+               <Link to='https://goldingllc.net/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+               </Link>
               </div>
             </div>
 
@@ -95,7 +99,7 @@ const Project = () => {
               />
             </div>
             <div className="text-center w-full md:w-[30vw]">
-              <h1 className="text-2xl font-bold mb-5">MavyScrubs</h1>
+              <h1 className="text-2xl font-bold mb-5">Atlas</h1>
               <p className="text-gray-500 text-md md:text-lg font-medium">
                 Atlas is a professional portfolio website crafted to represent
                 brands, showcase services, and establish a strong online
@@ -111,9 +115,11 @@ const Project = () => {
                 </button>
               </div>
               <div>
+               <Link to='https://atlasintlgroup.com/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+               </Link>
               </div>
             </div>
           </div>
@@ -122,11 +128,11 @@ const Project = () => {
 
           <div className="flex flex-col-reverse md:flex-row mt-24 md:mt-32 pb-16 md:mx-5 justify-center gap-10 md:gap-20">
             <div className="text-center w-full md:w-[30vw]">
-              <h1 className="text-2xl font-bold mb-5">Golding LLC</h1>
+              <h1 className="text-2xl font-bold mb-5">Shree9nb Hotel</h1>
               <p className="text-gray-500 text-md md:text-lg font-medium">
-                Golding LLC combines industry expertise with innovative
-                solutions to help clients achieve their goals with confidence
-                and clarity.
+                Shree9NB offers warm hospitality and modern comforts, creating
+                memorable stays where guests can relax, unwind, and experience
+                true luxury with ease and elegance.
               </p>
               <div className="flex gap-10 justify-center mt-4">
                 <button className="px-8 py-2 rounded-full font-medium border cursor-pointer">
@@ -137,16 +143,18 @@ const Project = () => {
                 </button>
               </div>
               <div>
+               <Link to='https://shree9nbhotels.in/'>
                 <button className="mt-4 bg-blue-600 text-white cursor-pointer px-8 py-2 rounded-full font-medium">
                   Live Demo
                 </button>
+               </Link>
               </div>
             </div>
 
             <div className="w-full h-[150px] md:w-[50vw] md:h-[40vh]">
               <img
                 className="h-full w-full  rounded-xl"
-                src="/Golding.png"
+                src="/shree9nb.png"
                 alt=""
               />
             </div>

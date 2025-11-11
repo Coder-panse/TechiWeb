@@ -173,6 +173,22 @@ const Service = () => {
           Intuitive UI/UX designs for seamless user experiences.
         </SpotlightCard>
        </motion.div>
+
+       <motion.div
+       ref={ref}
+      initial={{ opacity: 0, y: 20 }}
+      animate={hasAnimated ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay: 1.6 }}
+       >
+         <SpotlightCard
+          className="custom-spotlight-card w-[300px] h-[200px]"
+          spotlightColor="rgba(0, 229, 255, 0.2)"
+        >
+          <h1 className="text-xl font-semibold">API HUB</h1>
+          <br />
+          Seamless API access. Faster development.
+        </SpotlightCard>
+       </motion.div>
       </div>
     </div>
   );
