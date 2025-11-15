@@ -21,8 +21,8 @@ export default function ContactForm() {
   const handleSubmit = async() => {
     if (formData.fullName && formData.contactNo && formData.organization && formData.email && formData.description) {
       
-      const response=await axios.post("http://localhost:8000/mail",formData)
-      
+      const response=await axios.post("https://techiweb-backend.onrender.com/mail",formData)
+      console.log(response.data)
       
       setShowSuccess(true);
       setFormData({
