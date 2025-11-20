@@ -36,7 +36,7 @@ const Contact = () => {
 
       console.log([...formData.entries()])
       const response = await axios.post(
-        "http://localhost:8000/apply",
+        "https://techiweb-backend.onrender.com/apply",
         formData,{
       headers: { "Content-Type": "multipart/form-data" },
         }
