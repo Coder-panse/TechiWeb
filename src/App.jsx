@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import Home from "./Home/Home";
 import { Route, Routes } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
 import Work from "./page/Work";
 import Studio from "./page/Studio";
 import Service from "./page/Service";
@@ -19,6 +20,7 @@ const App = () => {
   const serviceRef = useRef(null);
   return (
     <>
+    <ToastContainer position="top-center" theme="dark" />
       <Navbar />
       <Routes>
         <Route path="/" element={<IndexPage />} />
@@ -27,6 +29,7 @@ const App = () => {
         <Route path="/contact" element={<ContactForm/>}/>
       </Routes>
       <Footer />
+
     </>
 
     // <>
